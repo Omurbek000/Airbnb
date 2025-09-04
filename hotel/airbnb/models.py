@@ -43,3 +43,6 @@ class City(models.Model):
 
     def __str__(self):
       return f"{self.city_name}:{self.city_country}:{self.city_capital}"
+
+class Hotel(models.Model)
+  pass
