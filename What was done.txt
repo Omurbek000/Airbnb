@@ -7,3 +7,7 @@ models.py жаздым (дагы жазыш керек)
 ,,,,,,,,
 07,09,2025
 models.py(Толук зажылып бутту )
+translation.py(жазылды)
+admin.py(жазылды)
+migrate(болду)
+superuser(бар)
