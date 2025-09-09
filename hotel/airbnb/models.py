@@ -176,3 +176,19 @@ class Booking(models.Model):
     )
 
     special_requests = models.TextField(blank=True, null=True, verbose_name="Пожелания и специальные запросы")
+    
+    
+ #! для дальнейшего рассширение модеи и автоматического рассчета стоимости!!!!   
+  # def save(self, *args, **kwargs):
+  #   if self.check_in and self.check_out and self.room_book:
+  #       nights = (self.check_out - self.check_in).days
+  #       if nights < 1:
+  #           nights = 1
+  #       self.total_price = self.room_book.room_price * nights
+  #   super().save(*args, **kwargs)
+
+  # def __str__(self):
+  #   if self.status_book == 'подтверждено':
+  #       return f"Бронь подтверждена: {self.user_book} {self.hotel_book} {self.room_book} {self.check_in} {self.check_out}"
+  #   else:
+  #       return f"Бронь: {self.user_book} {self.hotel_book} {self.room_book} {self.check_in} {self.check_out}"

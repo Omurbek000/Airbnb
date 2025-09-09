@@ -11,3 +11,7 @@ translation.py(жазылды)
 admin.py(жазылды)
 migrate(болду)
 superuser(бар)
+09.09.2025
+serializers.py(жазылды)
+filters.py(жазылды)
+views.py(дагы жазыш керек )
