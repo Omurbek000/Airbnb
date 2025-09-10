@@ -14,4 +14,8 @@ superuser(бар)
 09.09.2025
 serializers.py(жазылды)
 filters.py(жазылды)
-views.py(дагы жазыш керек )
+11,09,2025
+views.py(толук жазылды)
+paginations.py(жазылды)
+permisions.py(жазылды)
+urls.py(жазылды)

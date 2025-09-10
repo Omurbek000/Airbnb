@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Country, City, Hotel, HotelImage, Room, RoomImage, UserProfile, Review, Booking
+from .models import Country, City, Hotel, HotelImage, Room, RoomImage, UserProfile, Review, Booking, Amenity
 from modeltranslation.admin import TranslationAdmin
 
 
@@ -26,6 +26,15 @@ class CountryCityAdmin(BaseTranslationAdmin):
 class ReviewAdmin(BaseTranslationAdmin):
   pass 
 
+@admin.register(Amenity)
+class AmenityAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name')
+    search_fields = ('name',)
+
+class AmenityInline(admin.TabularInline):
+    model = Hotel.amenities.through  # связь ManyToMany
+    extra = 1
+
 class HotelImageInline(admin.TabularInline):
     model = HotelImage
     extra = 1
@@ -39,7 +48,8 @@ class RoomImageInline(admin.TabularInline):
 
 @admin.register(Hotel)
 class HotelAdmin(BaseTranslationAdmin):
-    inlines = [HotelImageInline]
+    inlines = [HotelImageInline, AmenityInline]
+    
 
 
 

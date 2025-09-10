@@ -11,7 +11,7 @@ class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True,)
 
     class Meta:
-        model = User
+        model = UserProfile
         fields = ["id", "username", "email", "password"]
 
     def create(self, validated_data):
@@ -113,6 +113,10 @@ class ReviewSerializer(serializers.ModelSerializer):
         return Review.objects.create(**validated_data)
 
 
+class RoomSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Room
+        fields = '__all_'
 
 class RoomListSerializer(serializers.ModelSerializer):
     room_images = RoomImageSerializer(many=True, read_only=True)
@@ -186,6 +190,11 @@ class HotelSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class AmenitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Amenity
+        fields = ['id', 'name', 'icon']
+
 
 class BookingSerializer(serializers.ModelSerializer):
     class Meta:
@@ -207,3 +216,12 @@ class CityListSerializer(serializers.ModelSerializer):
     class Meta:
         model = City
         fields = ["city_name", "hotels"]
+
+
+class CityDetailSerializer(serializers.ModelSerializer):
+    hotels = HotelListSerializer(source='hotels', many=True, read_only=True)
+
+    class Meta:
+        model = City
+        fields = ['id', 'city_name', 'city_country', 'city_capital', 'hotels']
+        
