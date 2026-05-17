@@ -45,9 +45,7 @@
 | **Backend**        | ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white) ![Django REST Framework](https://img.shields.io/badge/DRF-ff1709?style=flat&logo=django&logoColor=white) |
 | **База данных**    | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white) (также поддерживается SQLite) |
 | **Аутентификация** | ![JWT](https://img.shields.io/badge/JWT-black?style=flat&logo=JSON%20web%20tokens) ![django-allauth](https://img.shields.io/badge/django--allauth-37a3b0?style=flat) |
-| **Платежи**        | ![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=flat&logo=Stripe&logoColor=white) |
 | **Документация**   | ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=Swagger&logoColor=white) |
-| **Другое**         | Celery, Redis, Gunicorn, WhiteNoise |
 
 ## 🚀 Быстрый старт (Установка и запуск)
 
