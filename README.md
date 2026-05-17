@@ -6,7 +6,7 @@
 
 Полнофункциональный бэкенд для платформы бронирования жилья, вдохновлённой Airbnb. Проект предоставляет мощный REST API для управления отелями, номерами, бронированиями и пользователями.
 
-![Airbnb Clone API](https://via.placeholder.com/800x400.png?text=Airbnb+Clone+API)
+![Airbnb Clone API](https://www.airbnb.ru/)
 
 ## 📋 О проекте
 
