@@ -1,12 +1,25 @@
-# 🏨 Airbnb Clone API
+<!-- Баннер с собственным логотипом -->
+![Airbnb Clone Banner](./images/airbnb-clone-banner.png)
 
+# Airbnb Clone
+
+**Airbnb Clone** — это учебный проект, созданный для отработки навыков веб-разработки.
+Проект не связан с Airbnb, Inc. и не использует их товарные знаки.
+
+## Цель
+- Изучение [технологии]
+- Демонстрация навыков создания SPA
+- ...
+
+## Важное примечание
+**Airbnb Clone** является независимым проектом, разработанным исключительно в образовательных целях. Он не одобрен, не спонсируется и не связан с Airbnb, Inc. или ее аффилированными лицами.
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-5.2-green)](https://www.djangoproject.com/)
 [![DRF](https://img.shields.io/badge/DRF-3.15-red)](https://www.django-rest-framework.org/)
 
 Полнофункциональный бэкенд для платформы бронирования жилья, вдохновлённой Airbnb. Проект предоставляет мощный REST API для управления отелями, номерами, бронированиями и пользователями.
 
-![Airbnb Clone API](https://www.airbnb.ru/)
+
 
 ## 📋 О проекте
 
